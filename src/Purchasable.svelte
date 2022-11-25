@@ -4,27 +4,38 @@
     interface item {
         name:string
         description:string;
-        suspersecond:number;
+        suspersecond?:number;
         price:number;
         amount:number;
         image:string;
+        upgrade:boolean;
     }
     let items:item[] = [
         {
-        "name": "Vent",
-        "description": "Use this to get called the sus.",
-        "suspersecond": 1,
-        "price": 15,
-        "image": "./assets/purchasables/CHANGEME.png",
-        "amount": 0
+            "name": "More impostors",
+            "description": "It was a multi kill!",
+            "image": "./assets/purchasables/CHANGEME.png",
+            "amount": 0,
+            "upgrade": true,
+            "price": 25
         },
         {
-        "name": "Lights sabotage",
-        "description": "Get sussy in the dark.",
-        "suspersecond": 5,
-        "price": 250,
-        "image": "./assets/purchasables/CHANGEME.png",
-        "amount": 0
+            "name": "Vent",
+            "description": "Use this to get called the sus.",
+            "suspersecond": 1,
+            "price": 50,
+            "image": "./assets/purchasables/CHANGEME.png",
+            "amount": 0,
+            "upgrade": false
+        },
+        {
+            "name": "Lights sabotage",
+            "description": "Get sussy in the dark.",
+            "suspersecond": 5,
+            "price": 500,
+            "image": "./assets/purchasables/CHANGEME.png",
+            "amount": 0,
+            "upgrade": false
         }
 
     ]
